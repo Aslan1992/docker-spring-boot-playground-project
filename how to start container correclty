@@ -1,0 +1,11 @@
+When start container via this command
+
+docker run -d -p <Here port of your local machine>:<port in container> <here image name>
+
+Example:
+docker run -d -p 8090:8085 service1
+
+8090 - any available port on local machine
+8085 - port indicated in application.yaml
+(or in application-docker.yaml depending on "-Dspring.profiles.active=docker")
+as port where server will be run

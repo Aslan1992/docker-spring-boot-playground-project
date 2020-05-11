@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-init-table.yaml
+      author: Aslan
+      changes:
+        - createTable:
+            tableName: init_test
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: value
+                  type: text

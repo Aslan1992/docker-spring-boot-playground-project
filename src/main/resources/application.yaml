@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    database:
+    show-sql: true
+  datasource:
+    platform: postres
+    url: jdbc:postgresql://localhost:5436/mydb
+    username: aslan
+    password: aslan
